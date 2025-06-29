@@ -12,12 +12,6 @@
   <url>http://maven.apache.org</url>
 
   <dependencies>
-   <dependency>
-    <groupId>de.htw_berlin.fb4.ossd</groupId>
-    <artifactId>prose_builder</artifactId>
-    <version>1.0-SNAPSHOT</version>
-  </dependency>
-
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -26,12 +20,16 @@
     </dependency>
 
     <dependency>
-  <groupId>de.htw_berlin.fb4.proseapp_Shamanina</groupId>
-  <artifactId>prose-app</artifactId>
-  <version>1.0-SNAPSHOT</version>
-</dependency>
+      <groupId>de.htw_berlin.fb4.ossd</groupId>
+      <artifactId>prose_builder</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
 
-
+    <dependency>
+      <groupId>de.htw_berlin.fb4.proseapp_Shamanina</groupId>
+      <artifactId>prose-app</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
 
     <dependency>
       <groupId>de.htw_berlin.prose</groupId>
@@ -41,40 +39,28 @@
   </dependencies>
 
   <repositories>
-  <repository>
-  <id>sha-mani-git</id>
-  <url>https://maven.pkg.github.com/sha-ma-ni/prose-app-deploy</url>
-</repository>
+    <repository>
+      <id>sha-mani-git</id>
+      <url>https://maven.pkg.github.com/sha-ma-ni/prose-app-deploy</url>
+      </repository>
+
     <repository>
       <id>eliseHtw</id>
       <url>https://maven.pkg.github.com/eliseHtw/my-prose-app</url>
     </repository>
-    <repository>
-      <id>s-matthies</id>
-      <url>https://maven.pkg.github.com/s-matthies/simple-prose</url>
-    </repository>
-    <repository>
-  <id>joha1na-github</id>
-  <url>https://maven.pkg.github.com/joha1na/my-prose-app</url>
-</repository>
-    <repository>
-        <id>github</id>
-        <url>https://maven.pkg.github.com/sha-ma-ni/prose-app-deploy</url>
-    </repository>
 
   </repositories>
  
-<build>
-  <plugins>
-    <plugin>
-      <groupId>org.codehaus.mojo</groupId>
-      <artifactId>exec-maven-plugin</artifactId>
-      <version>3.5.1</version>
-      <configuration>
-        <mainClass>com.example.CollaborativeProse</mainClass>
-      </configuration>
-    </plugin>
-  </plugins>
-</build>
-
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.5.1</version>
+        <configuration>
+          <mainClass>com.example.CollaborativeProse</mainClass>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
