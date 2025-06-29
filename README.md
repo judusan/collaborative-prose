@@ -13,8 +13,9 @@
   </dependency>
   ```
     
-- **Prose App by Shamanina**
-  Repository: https://github.com/sha-ma-ni/prose-app-deploy
+- **Prose App** by Shamanina
+
+    Repository: https://github.com/sha-ma-ni/prose-app-deploy
 
     Maven Dependency:
 
@@ -26,17 +27,18 @@
   </dependency>
   ```
 
-- **Sample Prose Component** by S-Matthies
-Repository: https://github.com/s-matthies/simple-prose
+- **My Prose App** by Elise
+
+  Repository: https://maven.pkg.github.com/eliseHtw/my-prose-app
 
   Maven Dependency:
 
   ```xml
-  <dependency>
-    <groupId>de.htw_berlin.prose</groupId>
-    <artifactId>prose-sample</artifactId>
-    <version>1.0-SNAPSHOT</version>
-  </dependency>
+  <repository>
+      <id>eliseHtw</id>
+      <url>https://maven.pkg.github.com/eliseHtw/my-prose-app</url>
+    </repository>
+  </repositories>
   ```
 
 ## Maven Dependencies Configuration
